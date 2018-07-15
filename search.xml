@@ -70,10 +70,10 @@
   
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      <content type="html"><![CDATA[]]></content>
+      <title>about</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<h1 id="毕业于华科计算机"><a href="#毕业于华科计算机" class="headerlink" title="毕业于华科计算机"></a>毕业于华科计算机</h1><h1 id="目前就职与深信服云安全部门"><a href="#目前就职与深信服云安全部门" class="headerlink" title="目前就职与深信服云安全部门"></a>目前就职与深信服云安全部门</h1><h1 id="python爱好者，热衷开源"><a href="#python爱好者，热衷开源" class="headerlink" title="python爱好者，热衷开源"></a>python爱好者，热衷开源</h1><h1 id="喜欢篮球、象棋、武侠迷"><a href="#喜欢篮球、象棋、武侠迷" class="headerlink" title="喜欢篮球、象棋、武侠迷"></a>喜欢篮球、象棋、武侠迷</h1>]]></content>
     </entry>
     
     <entry>
@@ -84,10 +84,10 @@
     </entry>
     
     <entry>
-      <title>about</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[<h1 id="毕业于华科计算机"><a href="#毕业于华科计算机" class="headerlink" title="毕业于华科计算机"></a>毕业于华科计算机</h1><h1 id="目前就职与深信服云安全部门"><a href="#目前就职与深信服云安全部门" class="headerlink" title="目前就职与深信服云安全部门"></a>目前就职与深信服云安全部门</h1><h1 id="python爱好者，热衷开源"><a href="#python爱好者，热衷开源" class="headerlink" title="python爱好者，热衷开源"></a>python爱好者，热衷开源</h1><h1 id="喜欢篮球、象棋、武侠迷"><a href="#喜欢篮球、象棋、武侠迷" class="headerlink" title="喜欢篮球、象棋、武侠迷"></a>喜欢篮球、象棋、武侠迷</h1>]]></content>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      <content type="html"><![CDATA[]]></content>
     </entry>
     
   
