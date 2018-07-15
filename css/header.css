@@ -67,7 +67,7 @@
   margin: 0 0 0.5em 0;
 }
 .header .header-container .header-title .subtitle {
-  font: italic 1.5em "Roboto", "Noto Sans", Helvetica, Arial, sans-serif;
+  font: bold 1.5em "Roboto", "Noto Sans", Helvetica, Arial, sans-serif;
   margin: 0.5em 0 0 0;
 }
 .header .header-container .logo {
