@@ -82,7 +82,7 @@
     <script defer type="text/javascript" src="/js/index.js"></script>
     
     <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>设计模式 | EricXi's blog - 个人技术博客小站</title>
+    <title>适配器模式 | EricXi's blog - 个人技术博客小站</title>
   </head>
   <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN"  data-spy="scroll" data-target=".list-group">
     
@@ -133,7 +133,7 @@
   
   <article class="post-article card animate" itemscope itemtype="http://schema.org/Article">
     <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="https://hustcsxg.github.io/2018/07/15/设计模式/">
+      <link itemprop="mainEntityOfPage" href="https://hustcsxg.github.io/2018/07/15/适配器模式/">
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
        <meta itemprop="name" content="席刚-EriXi">
        <meta itemprop="description" content="不乱于心，不困于情，不恋过往，不畏将来">
@@ -144,11 +144,11 @@
       </span>
     </div>
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">设计模式</h1>
+      <h1 class="post-title" itemprop="name headline">适配器模式</h1>
       <div class="post-meta">
         
         <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-07-15T18:33:00+08:00">2018-07-15 18:33:00</time></span>
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-07-15T23:34:23+08:00">2018-07-15 23:34:23</time></span>
         </span>
         
         
@@ -166,39 +166,12 @@
       </div>
     </header>
     <main class="post-main" itemprop="articleBody">
-      <h1 id="设计模式python实现"><a href="#设计模式python实现" class="headerlink" title="设计模式python实现"></a>设计模式python实现</h1><a id="more"></a>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">模式名(中文)</th>
-<th style="text-align:left">模式名(英文)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">抽象工厂模式</td>
-<td style="text-align:left">abstract_factory</td>
-</tr>
-<tr>
-<td style="text-align:left">适配器模式</td>
-<td style="text-align:left">adapter</td>
-</tr>
-</tbody>
-</table>
-
+      <h2 id="适配器模式（-adapter）"><a href="#适配器模式（-adapter）" class="headerlink" title="适配器模式（    adapter）"></a>适配器模式（    adapter）</h2><p>适配器模式：将一个类的接口转换成客户希望的另一个接口。适配器模式让那些接口不兼容的类可以一起工作<br>Adapter Pattern：Convert the interface of a class into another interface clients expect.Adapter lets classes work together that couldn’t otherwise because of incompatible interface.<br><a id="more"></a></p>
+<h2 id="python代码"><a href="#python代码" class="headerlink" title="python代码"></a>python代码</h2><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line">import os</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class Dog(object):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.name = &quot;Dog&quot;</span><br><span class="line"></span><br><span class="line">    def bark(self):</span><br><span class="line">        return &quot;woof!&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class Cat(object):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.name = &quot;Cat&quot;</span><br><span class="line"></span><br><span class="line">    def meow(self):</span><br><span class="line">        return &quot;meow!&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class Human(object):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.name = &quot;Human&quot;</span><br><span class="line"></span><br><span class="line">    def speak(self):</span><br><span class="line">        return &quot;&apos;hello&apos;&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class Car(object):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.name = &quot;Car&quot;</span><br><span class="line"></span><br><span class="line">    def make_noise(self, octane_level):</span><br><span class="line">        return &quot;vroom%s&quot; % (&quot;!&quot; * octane_level)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class Adapter(object):</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    Adapts an object by replacing methods.</span><br><span class="line">    Usage:</span><br><span class="line">    dog = Dog</span><br><span class="line">    dog = Adapter(dog, dict(make_noise=dog.bark))</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    def __init__(self, obj, adapted_methods):</span><br><span class="line">        &quot;&quot;&quot;We set the adapted methods in the object&apos;s dict&quot;&quot;&quot;</span><br><span class="line">        self.obj = obj</span><br><span class="line">        self.__dict__.update(adapted_methods)</span><br><span class="line"></span><br><span class="line">    def __getattr__(self, attr):</span><br><span class="line">        &quot;&quot;&quot;All non-adapted calls are passed to the object&quot;&quot;&quot;</span><br><span class="line">        return getattr(self.obj, attr)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def main():</span><br><span class="line">    objects = []</span><br><span class="line">    dog = Dog()</span><br><span class="line">    objects.append(Adapter(dog, dict(make_noise=dog.bark)))</span><br><span class="line">    cat = Cat()</span><br><span class="line">    objects.append(Adapter(cat, dict(make_noise=cat.meow)))</span><br><span class="line">    human = Human()</span><br><span class="line">    objects.append(Adapter(human, dict(make_noise=human.speak)))</span><br><span class="line">    car = Car()</span><br><span class="line">    car_noise = lambda: car.make_noise(3)</span><br><span class="line">    objects.append(Adapter(car, dict(make_noise=car_noise)))</span><br><span class="line"></span><br><span class="line">    for obj in objects:</span><br><span class="line">        print(&quot;A&quot;, obj.name, &quot;goes&quot;, obj.make_noise())</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
+<h2 id="执行结果"><a href="#执行结果" class="headerlink" title="执行结果"></a>执行结果</h2><pre><code>
+</code></pre>
     </main>
     <footer class="post-footer">
-      
-      <div class="post-tags">
-        
-        
-        
-        
-        <a class="post-tag button" href="/tags/设计模式/" style="background: #fc6423;" rel="tag"><i class="fas fa-tags"></i>设计模式</a>
-        
-        <a class="post-tag button" href="/tags/python/" style="background: #a3bb54;" rel="tag"><i class="fas fa-tags"></i>python</a>
-        
-      </div>
       
     </footer>
   </article>
@@ -230,12 +203,12 @@
   <div class="post-nav">
     <div class="post-nav-next post-nav-item">
       
-      <a href="/2018/07/15/hexo-theme-aria/" rel="next" title="hexo_theme_aria"><i class="fas fa-angle-left"></i><span class="nav-title">hexo_theme_aria</span></a>
+      <a href="/2018/07/15/抽象工厂模式/" rel="next" title="抽象工厂模式"><i class="fas fa-angle-left"></i><span class="nav-title">抽象工厂模式</span></a>
       
     </div>
     <div class="post-nav-prev post-nav-item">
       
-      <a href="/2018/07/15/程序员的数学/" rel="prev" title="程序员的数学"><span class="nav-title">程序员的数学</span><i class="fas fa-angle-right"></i></a>
+      <a href="/2018/07/16/shell脚本/" rel="prev" title="shell脚本"><span class="nav-title">shell脚本</span><i class="fas fa-angle-right"></i></a>
       
     </div>
   </div>
@@ -262,7 +235,7 @@
       "client_secret": "e3922064fd0dd860b593102f2d4641cde7a07e0f",
       "no_comment": "这个页面还没有评论，现在就去评论吧！",
       "go_to_comment": "去评论",
-      "issue_title": "设计模式",
+      "issue_title": "适配器模式",
       "btn_class": "button",
       "comments_target": "#comment-thread"
     });
@@ -356,7 +329,7 @@
 <hr>
 <div class="post-toc sidebar-item" id="toc-div">
   <div><i class="fas fa-list-ol"></i>文章目录</div>
-  <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-1"><a class="list-group-item toc-link" href="#设计模式python实现"><span class="toc-text">设计模式python实现</span></a></li></ol></div>
+  <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#适配器模式（-adapter）"><span class="toc-text">适配器模式（    adapter）</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#python代码"><span class="toc-text">python代码</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#执行结果"><span class="toc-text">执行结果</span></a></li></ol></div>
 </div>
 
 
