@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hustcsxg.github.io/"/>
-  <updated>2018-07-15T07:13:28.001Z</updated>
+  <updated>2018-07-15T11:02:42.472Z</updated>
   <id>https://hustcsxg.github.io/</id>
   
   <author>
@@ -15,6 +15,78 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>程序员的数学</title>
+    <link href="https://hustcsxg.github.io/2018/07/15/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%95%B0%E5%AD%A6/"/>
+    <id>https://hustcsxg.github.io/2018/07/15/程序员的数学/</id>
+    <published>2018-07-15T10:55:27.000Z</published>
+    <updated>2018-07-15T11:02:42.472Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;figure class=&quot;hljs highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="books" scheme="https://hustcsxg.github.io/categories/books/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>设计模式</title>
+    <link href="https://hustcsxg.github.io/2018/07/15/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    <id>https://hustcsxg.github.io/2018/07/15/设计模式/</id>
+    <published>2018-07-15T10:33:00.000Z</published>
+    <updated>2018-07-15T10:48:26.360Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;设计模式python实现&quot;&gt;&lt;a href=&quot;#设计模式python实现&quot; class=&quot;headerlink&quot; title=&quot;设计模式python实现&quot;&gt;&lt;/a&gt;设计模式python实现&lt;/h1&gt;
+    
+    </summary>
+    
+      <category term="设计模式" scheme="https://hustcsxg.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+      <category term="设计模式" scheme="https://hustcsxg.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+      <category term="python" scheme="https://hustcsxg.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo_theme_aria</title>
+    <link href="https://hustcsxg.github.io/2018/07/15/hexo-theme-aria/"/>
+    <id>https://hustcsxg.github.io/2018/07/15/hexo-theme-aria/</id>
+    <published>2018-07-15T10:03:26.000Z</published>
+    <updated>2018-07-15T10:18:26.554Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;hexo-theme-aria&quot;&gt;&lt;a href=&quot;#hexo-theme-aria&quot; class=&quot;headerlink&quot; title=&quot;hexo-theme-aria&quot;&gt;&lt;/a&gt;hexo-theme-aria&lt;/h1&gt;&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="https://hustcsxg.github.io/tags/hexo/"/>
+    
+      <category term="hexo-theme" scheme="https://hustcsxg.github.io/tags/hexo-theme/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
