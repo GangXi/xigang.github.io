@@ -3,6 +3,39 @@
   
     
     <entry>
+      <title>excel</title>
+      <link href="/2018/08/08/excel/"/>
+      <url>/2018/08/08/excel/</url>
+      <content type="html"><![CDATA[<a id="more"></a>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2018/08/07/hello-world/"/>
+      <url>/2018/08/07/hello-world/</url>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><a id="more"></a><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>数据分析</title>
+      <link href="/2018/08/07/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+      <url>/2018/08/07/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/</url>
+      <content type="html"><![CDATA[<p>数据获取，ETL, 可视化 决策<br><a id="more"></a></p><h1 id="superset"><a href="#superset" class="headerlink" title="superset"></a>superset</h1><h1 id="pymysql"><a href="#pymysql" class="headerlink" title="pymysql"></a>pymysql</h1><h1 id="pandas"><a href="#pandas" class="headerlink" title="pandas"></a>pandas</h1><h1 id="excel"><a href="#excel" class="headerlink" title="excel"></a>excel</h1><h1 id="xlrd、xlwt"><a href="#xlrd、xlwt" class="headerlink" title="xlrd、xlwt"></a>xlrd、xlwt</h1><h1 id="xlutils、openpyxl、"><a href="#xlutils、openpyxl、" class="headerlink" title="xlutils、openpyxl、"></a>xlutils、openpyxl、</h1><h1 id="xlsxwriter"><a href="#xlsxwriter" class="headerlink" title="xlsxwriter"></a>xlsxwriter</h1><p>数据分析的关键点 ：业务思维 数据能力 工具技巧</p><h1 id="数据分析思维"><a href="#数据分析思维" class="headerlink" title="数据分析思维"></a>数据分析思维</h1><h2 id="1-结构化"><a href="#1-结构化" class="headerlink" title="1. 结构化"></a>1. 结构化</h2><p> 麦肯基金字塔 可以xmind 逐个验证 思维导图<br> 人类线性思维受限，逐层分析，不同层级不要混淆。<br> 借助思维导图工具直观展现，可以有效避免疏漏，同自测点。</p><p> 结构化主要是分析思维，但不够数据，会发散</p><h2 id="2-公式化"><a href="#2-公式化" class="headerlink" title="2. 公式化"></a>2. 公式化</h2><p> 最终观点要量化，数据化，用公式化来解决这类问题。</p><p> 一切结构均可量化，  细分到最小不可分割</p><h2 id="3-业务化"><a href="#3-业务化" class="headerlink" title="3. 业务化"></a>3. 业务化</h2><p> 作为前两种的补充<br>避免为分析而分析，如共享单车的投放量，升入理解业务，分析是否贴合业务</p><h1 id="数据分析的思维技巧"><a href="#数据分析的思维技巧" class="headerlink" title="数据分析的思维技巧"></a>数据分析的思维技巧</h1><h2 id="1-象限法-2-多维法立方体-3-假设法没有数据时-4-指数法"><a href="#1-象限法-2-多维法立方体-3-假设法没有数据时-4-指数法" class="headerlink" title="1. 象限法 2. 多维法立方体 3. 假设法没有数据时 4. 指数法"></a>1. 象限法 2. 多维法立方体 3. 假设法没有数据时 4. 指数法</h2>]]></content>
+      
+      <categories>
+          
+          <category> DA </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
       <title>敦煌美景</title>
       <link href="/2018/07/16/%E6%95%A6%E7%85%8C%E7%BE%8E%E6%99%AF/"/>
       <url>/2018/07/16/%E6%95%A6%E7%85%8C%E7%BE%8E%E6%99%AF/</url>
@@ -125,17 +158,15 @@
       
     </entry>
     
-    <entry>
-      <title>Hello World</title>
-      <link href="/2018/07/15/hello-world/"/>
-      <url>/2018/07/15/hello-world/</url>
-      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><a id="more"></a><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-      
-      
-    </entry>
+  
+  
     
-  
-  
+    <entry>
+      <title>about</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<h1 id="毕业于华科计算机"><a href="#毕业于华科计算机" class="headerlink" title="毕业于华科计算机"></a>毕业于华科计算机</h1><h1 id="目前就职与深信服云安全部门"><a href="#目前就职与深信服云安全部门" class="headerlink" title="目前就职与深信服云安全部门"></a>目前就职与深信服云安全部门</h1><h1 id="python爱好者，热衷开源"><a href="#python爱好者，热衷开源" class="headerlink" title="python爱好者，热衷开源"></a>python爱好者，热衷开源</h1><h1 id="喜欢篮球、象棋、武侠迷"><a href="#喜欢篮球、象棋、武侠迷" class="headerlink" title="喜欢篮球、象棋、武侠迷"></a>喜欢篮球、象棋、武侠迷</h1>]]></content>
+    </entry>
     
     <entry>
       <title>tags</title>
@@ -149,13 +180,6 @@
       <link href="/categories/index.html"/>
       <url>/categories/index.html</url>
       <content type="html"><![CDATA[]]></content>
-    </entry>
-    
-    <entry>
-      <title>about</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[<h1 id="毕业于华科计算机"><a href="#毕业于华科计算机" class="headerlink" title="毕业于华科计算机"></a>毕业于华科计算机</h1><h1 id="目前就职与深信服云安全部门"><a href="#目前就职与深信服云安全部门" class="headerlink" title="目前就职与深信服云安全部门"></a>目前就职与深信服云安全部门</h1><h1 id="python爱好者，热衷开源"><a href="#python爱好者，热衷开源" class="headerlink" title="python爱好者，热衷开源"></a>python爱好者，热衷开源</h1><h1 id="喜欢篮球、象棋、武侠迷"><a href="#喜欢篮球、象棋、武侠迷" class="headerlink" title="喜欢篮球、象棋、武侠迷"></a>喜欢篮球、象棋、武侠迷</h1>]]></content>
     </entry>
     
   
