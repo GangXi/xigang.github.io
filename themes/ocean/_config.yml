@@ -1,23 +1,23 @@
 # Menu
 menu:
-  Home: /
-  Archives: /archives
-  Gallery: /gallery
-  About: /about
-  Links: /links
+  首页: /
+  归档: /archives
+  分类: /gallery
+  关于: /about
+  友链: /links
 rss: /atom.xml
 
 
 # Miscellaneous
 favicon: /favicon.ico
-brand: /images/hexo.svg
+brand: /images/avatar.gif
 
 # Ocean Video
 # Because I put videos in multiple formats on the same path, I just labeled the path here.
 ocean:
   overlay: true
   path: /images/ocean/
-  brand: /images/hexo-inverted.svg
+  brand: /images/avatar1.gif
 
 # Content
 excerpt_link: Read More...
@@ -33,7 +33,7 @@ fancybox: true
 
 # Gitalk
 gitalk:
-  enable: false # true
+  enable: true # true
   clientID: # GitHub Application Client ID
   clientSecret: # Client Secret
   repo: # Repository name
@@ -44,13 +44,13 @@ gitalk:
 valine:
   enable: false # true
   el: 'vcomments'
-  appId: 
-  appKey: 
+  appId:
+  appKey:
   notify: false
   verify: true
   avatar: 'mp'
   pageSize: '10'
-  placeholder: '请输入...' 
+  placeholder: '请输入...'
 
 # Katex Support
 katex:

@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: EricXi's blog
-subtitle: awesome python
-description: 不乱于心，不困于情，不恋过往，不畏将来
-keywords: python blog eric hustcsxg
+title: EricXi's Blog
+subtitle: Coding is part of my life, Just like poem.
+description: 不乱于心，不困于情，不恋过往，不畏将来。
+keywords: python blog eric hustcsxg aihug
 author: EricXi
 language: zh-CN
 timezone: Asia/Chungking
@@ -19,7 +19,7 @@ permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 # Directory
-source_dir: source
+source_dir: sourc
 public_dir: public
 tag_dir: tags
 archive_dir: archives
@@ -97,6 +97,7 @@ feed:
   content:
   content_limit: 140
   content_limit_delim: ' '
+  order_by: -date
 
 # sitemap
 sitemap:
